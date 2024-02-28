@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 75px;
+}
+
+nav{
+    background-color: #fff;
+    text-align: left;
+    padding: 20px;
+    
+}
+
+
+.title {
+    margin: 0;
+}
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.logo-container {
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; /* Add padding to the logo container */
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.logo-container img {
+    width: 50%; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio while adjusting width */
+}
+
+
+img {
+    max-width: 30%;
+}
+
+.paragraphs {
+    line-height: 1.6;
+}
