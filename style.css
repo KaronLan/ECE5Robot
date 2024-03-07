@@ -38,6 +38,11 @@ nav{
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.video-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 .logo-container img {
     width: 50%; /* Adjust the width of the logo as needed */
     height: auto; /* Maintain aspect ratio while adjusting width */
