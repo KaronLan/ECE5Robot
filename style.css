@@ -34,8 +34,12 @@ nav{
     padding: 10px; /* Add padding to the logo container */
 }
 .image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
 }
 
