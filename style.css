@@ -10,6 +10,7 @@ header {
     padding: 75px;
 }
 
+
 nav{
     background-color: #fff;
     text-align: left;
@@ -21,7 +22,9 @@ nav{
 .title {
     margin: 0;
 }
-.content {
+
+
+.content1 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -33,7 +36,21 @@ nav{
     left: 0;
     padding: 10px; /* Add padding to the logo container */
 }
+
+.logo-container img {
+    width: 50%; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio while adjusting width */
+}
+
+
+.image-gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .image-container {
+    display: inline-block;
+    vertical-align: top; /* Align containers from top */
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -43,24 +60,69 @@ nav{
     margin-bottom: 10px;
 }
 
+
+
 .video-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-.logo-container img {
-    width: 50%; /* Adjust the width of the logo as needed */
-    height: auto; /* Maintain aspect ratio while adjusting width */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    margin: 20px 10px; /* Add margin as needed */
+
+}
+.video-container video{
+    max-width: 100%;
+    height: auto;
 }
 
+.media {
+    float: left;
+    width: 32%;
+    padding: 5px;
+}
+.media video {
+    max-width: 100%; /* Ensure video fills its container */
+    height: auto; /* Maintain aspect ratio */
+    align-items: center;
+}
 
-img {
-    max-width: 30%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 0 4px;
+}  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.caption {
+    margin-top: 5px; /* Add space between media and caption */
+    font-size: 14px;
+}
+
+.single_image{
+    padding: 20px
+}
+
+.hr-double {
+    border: 0;
+    border-top: 3px double #d0d0d5;
+    padding: 20px;
 }
 
 .paragraphs {
     line-height: 1.6;
+}
+
+.content2{
+    background-color: #8986ce;
+    color: #fff;
+    text-align: center;
+    padding: 45px;
 }

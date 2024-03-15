@@ -7,46 +7,122 @@
     <link rel="stylesheet" href="style.css">
     <title>ECE 5 RobotCar</title>
 </head>
-<body>
-    <nav>
-        <div class="logo-container">
-            <img src="images/Logo.png" alt="Logo">
-        </div>
-    </nav>
-    <header>
-        
-        <div class="title-background">
-            <h1 class="title">ECE 5 Robot Car</h1>
-            <h4 class="names">Robert Chaffee, Michael Liang, Yangjian Li, Karon Luo</h4>
-        </div>
-    </header>
-    <body>
-        
-    <p>We are creating a RobotCar!!!</p>
-    </body>
-    <section class="content">
-        <div class="image-container"></div>
-            <h2>Photo of a assambled robotcar held by duct tape/h2>
-            <img src="images/Duct taped assamble.jpg" alt="Image 1">
-            <p>The picture on the left is our initial assamble of the robot car, with duct tape holding it.</p>
-        </div>
+<nav>
+    <div class="logo-container">
+        <img src="images/Logo.png" alt="Logo">
+    </div>
+</nav>
+<header>
+    
+    <div class="title-background">
+        <h1 class="title">ECE 5 Robot Car</h1>
+        <h2 class="team_name">Team number: ## &emsp; Team name: The Third Place</h2>
+        <h4 class="names">Team members: Robert Chaffee,&nbsp; Michael Liang,&nbsp; Yangjian Li,&nbsp; Karon Luo</h4>
+        <img src="images/Seeding.jpg"style="width:50%">
+        <div class="caption">Group Image</div>
+    </div>
+</header>
 
+
+<body>
+    <section class="content1">
+        <h1 class="title">Robot Building</h1>
+        <h3>We are creating a RobotCar!!!<h3>
+        <div class ="image-gallery">
+            <div class="media">
+                <img src="images/Motor.jpg" alt=" Motors" style="width:100%">
+                <div class="caption">Assembling motors...</div>
+            </div>  
+            <div class="media">
+                <img src="images/Photoresistors.jpg" alt=" Photoresistor" style="width:100%">
+                <div class="caption">Assembling potoresistors...</div>
+            </div>  
+            <div class="media" width="200" height="300">
+                <img src="images/Potentiometer.jpg" alt=" Potentiometer" style="width:100%">
+                <div class="caption">Assembling potentiometers...</div>
+            </div>  
+            <div class="media">
+                <img src="images/Chasy.png" alt=" Chassis" style="width:100%">
+                <div class="caption">Chassis model</div>
+            </div>  
+            <div class="media">
+                <img src="images/Duct taped assamble.jpg" alt=" DuctTapeCar" style="width:100%">
+                <div class="caption">Duct taped assambled prototype.</div>
+            </div>  
+            <div class="media">
+                <img src="images/Picture Of Test Robot.jpg" alt=" DuctTapeCar" style="width:100%">
+                <div class="caption">Testing the robot...</div>
+            </div>  
+        </div>
+        
+        <hr class="hr-double">
+
+        <h3>We sucessfully assembled a RobotCar!!!</h3>
+        <div class="single_image">
+            <img src="images/AnnotatedFinalParts.jpg" alt=" FinalParts" style="width:100%">
+            <div class="caption"></div>
+        </div>
+        
+        <hr class="hr-double">
 
         <div class="video-container">
             <div class="item">
-                <h2>Video of line following robot</h2>
+                <h3>Video of line following robot</h3>
                 <video width="640" height="360" controls>
-                    <source src="./videos/FollowLine.mp4"  type ="video/mp4"> 
+                    <source src="./videos/FollowLine.mp4"  type ="video/mp4" > 
                 </video>
                 <p>The robot is following the line.</p>
             </div>
         </div>
+    </section>
 
-    
-        <div class="paragraphs">
-            <p>This is the second paragraph of the content.</p>
-            <p>This is the third paragraph of the content.</p>
+    <section class="content2">
+        <h1 class="title">Competition Day: PID control</h1>
+        <div class="videos">
+            <div class="item">
+                <h3>Drag Race </h3>
+                <video width="640" height="360" controls>
+                    <source src="./videos/dragrace"  type ="video/mp4" alt="Drag Race"> 
+                </video>
+                <p>time: ##; rank: ##</p>
+                <p>S:##; P:##; I:##; D:##.</p>
+                <p>We max our speed to 100.</p>
+                <p>We choose a P value at about 10 since the line is fairly straight; a small I value gives us small settling time; and a small D value which enables stability.</p>
+            </div>
+            <div class="item">
+                <h3>Loop Track </h3>
+                <video width="640" height="360" controls>
+                    <source src="./videos/roundtrack"  type ="video/mp4" alt="Round Track"> 
+                </video>
+                <p>loops: ##; rank: ##</p>
+                <p>S:##; P:##; I:##; D:##.</p>
+                <p>We max our speed to 99 so we can finish more loops in one minute.</p>
+                <p>We choose a P value at about 50 so it will be sensitive enough for the curves in the loop without developing too much overshoot. A small I value gives us small settling time, and a decent D value eliminates the overshoot created by the P value. ###</p>
+            </div>
+            <div class="item">
+                <h3>Frequency Sweep </h3>
+                <video width="640" height="360" controls>
+                    <source src="./videos/dragrace"  type ="video/mp4" alt="Frequency Sweep"> 
+                </video>
+                <p>Distance: ##; time: ##; rank: ##; Loop: ##</p>
+                <p>S:##; P:##; I:##; D:##.</p>
+                <p>We decrease the speed to 30, which is the minimum so the car will have more time to react.</p>
+                <p>We choose a P value at about 70 so it will be very sensitive... ###</p>
+            </div>
+            </div>
         </div>
+        
+
+    </section>
+
+    <section class="content1">
+        <h2>Reflection</h2>
+        <h3>Poster:</h3>
+        <img src="images/Poster.jpg"style="width:100%">
+        <p>During the last week, we think that our photoresistors are not neatly aligned, so we resoldered the new photoresistors.</p>
+        <p>We feel that the back of wheels are not having enough friction on the track, so we add rubber band to each of the wheel.</p>
+        <p>We also added weight to the back of the car and on the motors, so the motor can perform better.</p>
+        <p>If we have enough time, I hope that we can add indication light for the calirbation section, and a switch that can turn off the battery without unplugging it manually.</p>
     </section>
 
     <script src="script.js"></script>
