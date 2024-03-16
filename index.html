@@ -82,32 +82,33 @@
             <div class="item">
                 <h3>Drag Race </h3>
                 <video width="640" height="360" controls>
-                    <source src="./videos/dragrace"  type ="video/mp4" alt="Drag Race"> 
+                    <source src="./videos/DragRaceVideo.mp4"  type ="video/mp4" alt="Drag Race"> 
                 </video>
-                <p>time: ##; rank: ##</p>
-                <p>S:##; P:##; I:##; D:##.</p>
+                <p>time: 11.27(best); rank: 3rd</p>
+                <p>S:85:; P:40; I:1; D:48.</p>
                 <p>We max our speed to 100.</p>
                 <p>We choose a P value at about 10 since the line is fairly straight; a small I value gives us small settling time; and a small D value which enables stability.</p>
             </div>
             <div class="item">
                 <h3>Loop Track </h3>
                 <video width="640" height="360" controls>
-                    <source src="./videos/roundtrack"  type ="video/mp4" alt="Round Track"> 
+                    <source src="./videos/LoopCircuitVideo.mp4"  type ="video/mp4" alt="Round Track"> 
                 </video>
-                <p>loops: ##; rank: ##</p>
-                <p>S:##; P:##; I:##; D:##.</p>
-                <p>We max our speed to 99 so we can finish more loops in one minute.</p>
-                <p>We choose a P value at about 50 so it will be sensitive enough for the curves in the loop without developing too much overshoot. A small I value gives us small settling time, and a decent D value eliminates the overshoot created by the P value. ###</p>
+                <p>loops: 2; rank: n/a</p>
+                <p>S:30; P:38; I:10; D:53.</p>
+                <p>Our robot is not function at this time because we just switched to the new battery, so we have a low speed to ensure it is going.</p>
+                <p>We choose a P value at about 38 so it will be sensitive enough for the curves in the loop without developing too much overshoot. A small I value gives us small settling time, and a decent D value eliminates the overshoot created by the P value. </p>
             </div>
             <div class="item">
                 <h3>Frequency Sweep </h3>
                 <video width="640" height="360" controls>
                     <source src="./videos/dragrace"  type ="video/mp4" alt="Frequency Sweep"> 
                 </video>
-                <p>Distance: ##; time: ##; rank: ##; Loop: ##</p>
-                <p>S:##; P:##; I:##; D:##.</p>
-                <p>We decrease the speed to 30, which is the minimum so the car will have more time to react.</p>
-                <p>We choose a P value at about 70 so it will be very sensitive... ###</p>
+                <p>Distance: 4.5; time: 5min; rank: n/a; Loop: n/a</p>
+                <p>S:46; P:38; I:1; D:50.</p>
+                <p>At this time, the battery have been worn from the drag race, so we use a speed of 46, which is actually slower than the loop circuit, so the car will have more time to react.</p>
+                <p>We choose a P value at about 38 so it will be very sensitive at the low speed.</p>
+                <p>We increased the D value so the car will not have too much overshoot.</p>
             </div>
             </div>
         </div>
@@ -122,7 +123,7 @@
         <p>During the last week, we think that our photoresistors are not neatly aligned, so we resoldered the new photoresistors.</p>
         <p>We feel that the back of wheels are not having enough friction on the track, so we add rubber band to each of the wheel.</p>
         <p>We also added weight to the back of the car and on the motors, so the motor can perform better.</p>
-        <p>If we have enough time, I hope that we can add indication light for the calirbation section, and a switch that can turn off the battery without unplugging it manually.</p>
+        <p>If we have enough time, I hope that we can find a better PID after we switch out the battery. We have been always testing it on a lower voltage, and at a high voltage, it stops performing as we wanted.</p>
     </section>
 
     <script src="script.js"></script>
